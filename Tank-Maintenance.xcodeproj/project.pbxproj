@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C985DAC2737D57100B90D22 /* Tank_MaintenanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C985DAB2737D57100B90D22 /* Tank_MaintenanceApp.swift */; };
-		9C985DAE2737D57100B90D22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C985DAD2737D57100B90D22 /* ContentView.swift */; };
+		9C26D7E3273F8E7900B73586 /* TankVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C26D7E2273F8E7900B73586 /* TankVolumeView.swift */; };
+		9C2A842F273E3CF800890CDB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A842E273E3CF800890CDB /* HomePage.swift */; };
+		9C2A8431273E61D200890CDB /* SurfaceBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A8430273E61D200890CDB /* SurfaceBottomView.swift */; };
+		9C985DAC2737D57100B90D22 /* TankMaintenanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C985DAB2737D57100B90D22 /* TankMaintenanceApp.swift */; };
+		9C985DAE2737D57100B90D22 /* RestlifeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */; };
 		9C985DB02737D57300B90D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C985DAF2737D57300B90D22 /* Assets.xcassets */; };
 		9C985DB32737D57300B90D22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C985DB22737D57300B90D22 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C26D7E2273F8E7900B73586 /* TankVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankVolumeView.swift; sourceTree = "<group>"; };
+		9C2A842E273E3CF800890CDB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		9C2A8430273E61D200890CDB /* SurfaceBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceBottomView.swift; sourceTree = "<group>"; };
 		9C985DA82737D57100B90D22 /* Tank-Maintenance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tank-Maintenance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C985DAB2737D57100B90D22 /* Tank_MaintenanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank_MaintenanceApp.swift; sourceTree = "<group>"; };
-		9C985DAD2737D57100B90D22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C985DAB2737D57100B90D22 /* TankMaintenanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankMaintenanceApp.swift; sourceTree = "<group>"; };
+		9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestlifeBottomView.swift; sourceTree = "<group>"; };
 		9C985DAF2737D57300B90D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C985DB22737D57300B90D22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C26D7E4273FD1FC00B73586 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */,
+				9C2A8430273E61D200890CDB /* SurfaceBottomView.swift */,
+				9C26D7E2273F8E7900B73586 /* TankVolumeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9C985D9F2737D57100B90D22 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +67,9 @@
 		9C985DAA2737D57100B90D22 /* Tank-Maintenance */ = {
 			isa = PBXGroup;
 			children = (
-				9C985DAB2737D57100B90D22 /* Tank_MaintenanceApp.swift */,
-				9C985DAD2737D57100B90D22 /* ContentView.swift */,
+				9C26D7E4273FD1FC00B73586 /* Views */,
+				9C985DAB2737D57100B90D22 /* TankMaintenanceApp.swift */,
+				9C2A842E273E3CF800890CDB /* HomePage.swift */,
 				9C985DAF2737D57300B90D22 /* Assets.xcassets */,
 				9C985DB12737D57300B90D22 /* Preview Content */,
 			);
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C985DAE2737D57100B90D22 /* ContentView.swift in Sources */,
-				9C985DAC2737D57100B90D22 /* Tank_MaintenanceApp.swift in Sources */,
+				9C2A8431273E61D200890CDB /* SurfaceBottomView.swift in Sources */,
+				9C985DAE2737D57100B90D22 /* RestlifeBottomView.swift in Sources */,
+				9C985DAC2737D57100B90D22 /* TankMaintenanceApp.swift in Sources */,
+				9C26D7E3273F8E7900B73586 /* TankVolumeView.swift in Sources */,
+				9C2A842F273E3CF800890CDB /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct Tank_MaintenanceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomePage()
         }
     }
 }
