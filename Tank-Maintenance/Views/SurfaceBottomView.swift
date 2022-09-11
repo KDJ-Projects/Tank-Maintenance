@@ -72,21 +72,28 @@ struct SurfaceBottomView: View {
     
     // Calculate bottom surface
     private func calculateTankBottomSurface() {
-        var calcCircumferenceBottom: Double {
+        var calcRadiusBottom: Double {
             guard let m = Double(diameterOffBottom),
                   let n = Optional(2.0) else { return 0 }
             return m / n
         }
         
         var calcSurfaceBottom: Double {
-            guard let m = Optional(calcCircumferenceBottom),
-                  let n = Optional(3.14) else { return 0 }
-            return m * n
-            
+            guard let m = Optional(calcRadiusBottom),
+                  let n = Optional(3.14159) else { return 0 }
+            return (m * m) * n
         }
         
-        let rest = String(format:"%.1f", calcSurfaceBottom)
-        self.surfaceBottom = "Oppervlakte bodem \n\(rest) m2"
+        // Format: separate thousends
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.groupingSeparator = " "
+        
+        let curface = calcSurfaceBottom
+        let myformattedVolume = numberFormatter.string(for: curface)
+        
+        self.surfaceBottom = "Oppervlakte bodem \n\(myformattedVolume!) m2"
         
         diameterOffBottom == "" ? showAlert.toggle() : showOutcome.toggle()
     }

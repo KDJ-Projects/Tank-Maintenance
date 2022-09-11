@@ -95,8 +95,8 @@ struct TankVolumeView: View {
         
         var surfaceCircle: Double {
             guard let m = Optional(calcRadiusCircle),
-                  let n = Optional(3.14) else { return 0 }
-            return m * n
+                  let n = Optional(3.14159) else { return 0 }
+            return (m * m) * n
         }
         
         var volumeCylinder: Double {
@@ -105,8 +105,16 @@ struct TankVolumeView: View {
             return m * n
         }
         
-        let rest = String(format:"%.1f", volumeCylinder)
-        self.volume = "Volume tank \n\(rest) m3"
+        // Format: separate thousends
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.groupingSeparator = " "
+        
+        let volume = volumeCylinder
+        let myformattedVolume = numberFormatter.string(for: volume)
+    
+        self.volume = "Volume tank \n\(myformattedVolume!) m3"
         
         diameterCircle == "" || hightOffCilinder == "" ? showAlert.toggle() : showOutcome.toggle()
     }

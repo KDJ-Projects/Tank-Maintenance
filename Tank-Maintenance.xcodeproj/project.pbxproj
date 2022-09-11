@@ -14,6 +14,8 @@
 		9C985DAE2737D57100B90D22 /* RestlifeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */; };
 		9C985DB02737D57300B90D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C985DAF2737D57300B90D22 /* Assets.xcassets */; };
 		9C985DB32737D57300B90D22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C985DB22737D57300B90D22 /* Preview Assets.xcassets */; };
+		9CFBB66028CDE43A00A00897 /* SircumferanceTankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBB65F28CDE43A00A00897 /* SircumferanceTankView.swift */; };
+		9CFBB66428CDE47900A00897 /* SircumferenceTankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBB66328CDE47900A00897 /* SircumferenceTankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestlifeBottomView.swift; sourceTree = "<group>"; };
 		9C985DAF2737D57300B90D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C985DB22737D57300B90D22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CFBB65F28CDE43A00A00897 /* SircumferanceTankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SircumferanceTankView.swift; path = ../../../SircumferanceTankView.swift; sourceTree = "<group>"; };
+		9CFBB66328CDE47900A00897 /* SircumferenceTankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SircumferenceTankView.swift; path = ../../../../../SircumferenceTankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 				9C985DAD2737D57100B90D22 /* RestlifeBottomView.swift */,
 				9C2A8430273E61D200890CDB /* SurfaceBottomView.swift */,
 				9C26D7E2273F8E7900B73586 /* TankVolumeView.swift */,
+				9CFBB66328CDE47900A00897 /* SircumferenceTankView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -51,6 +56,7 @@
 		9C985D9F2737D57100B90D22 = {
 			isa = PBXGroup;
 			children = (
+				9CFBB65F28CDE43A00A00897 /* SircumferanceTankView.swift */,
 				9C985DAA2737D57100B90D22 /* Tank-Maintenance */,
 				9C985DA92737D57100B90D22 /* Products */,
 			);
@@ -158,6 +164,8 @@
 				9C985DAE2737D57100B90D22 /* RestlifeBottomView.swift in Sources */,
 				9C985DAC2737D57100B90D22 /* TankMaintenanceApp.swift in Sources */,
 				9C26D7E3273F8E7900B73586 /* TankVolumeView.swift in Sources */,
+				9CFBB66428CDE47900A00897 /* SircumferenceTankView.swift in Sources */,
+				9CFBB66028CDE43A00A00897 /* SircumferanceTankView.swift in Sources */,
 				9C2A842F273E3CF800890CDB /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

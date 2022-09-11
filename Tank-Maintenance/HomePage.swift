@@ -19,9 +19,9 @@ struct HomePage: View {
                     .offset(y: -40)
                 
                 NavigationLink(
-                    destination: RestlifeBottomView(),
+                    destination: SircumferenceTankView(),
                     label: {
-                        Text("Restleven bodem".uppercased())
+                        Text("Omtrek tank".uppercased())
                             .font(.headline)
                             .bold()
                             .frame(width: 280, height: 30)
@@ -68,6 +68,24 @@ struct HomePage: View {
                             )
                     }
                 ).padding()
+                
+                NavigationLink(
+                    destination: RestlifeBottomView(),
+                    label: {
+                        Text("Restleven bodem".uppercased())
+                            .font(.headline)
+                            .bold()
+                            .frame(width: 280, height: 30)
+                            .foregroundColor(.red)
+                            .padding()
+                            .padding(.horizontal, 10)
+                            .background(
+                                Capsule()
+                                    .stroke(Color.gray, lineWidth: 2.0)
+                            )
+                    }
+                ).padding()
+                
                 Spacer()
                 Text("©KDJ-Projects")
                     .font(.system(size: 12))
